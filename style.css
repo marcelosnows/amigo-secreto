@@ -17,7 +17,8 @@
 
 body {
     height: 100vh;
-    background-color: var(--color-primary);
+    background-color: var(--color-white);
+    /* background-color: var(--color-primary); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,9 +43,11 @@ body {
 /* Seção de entrada */
 .input-section {
     flex: 60%;
-    background-color: var(--color-secondary);
+    background-color: var(--color-tertiary);
+    /* background-color: var(--color-secondary); */
     border: 1px solid #000;
-    border-radius: 64px 64px 0 0;
+    /* border-radius: 10px 10px 0 0; */
+    /* border-radius: 64px 64px 0 0; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,7 +86,8 @@ body {
     width: 100%;
     padding: 10px;
     border: 2px solid #000;
-    border-radius: 25px 0 0 25px;
+    border-radius: 10px;
+    /* border-radius: 25px 0 0 25px; */
     font-size: 16px;
 }
 
@@ -99,7 +103,8 @@ body {
     font-size: 16px;
     border: 2px solid #333;
     border-right: none;
-    border-radius: 25px 0 0 25px;
+    /* border-radius: 25px 0 0 25px; */ 
+    border-radius: 10px;
     font-family: "Merriweather", serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -107,23 +112,32 @@ body {
 /* Estilos de botão */
 button {
     padding: 15px 30px;
+    margin-left: 10px;   
     font-family: "Inter", sans-serif;
     font-size: 16px;
     border: 2px solid #000;
-    border-radius: 25px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
     cursor: pointer;
 }
 
 .button-add {
-    background-color: var(--color-tertiary);
-    color: var(--color-text);
-    border-radius: 0 25px 25px 0;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    /* border-radius: 0 25px 25px 0; */
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+    background-color: var(--color-button-hover);
 }
+
+/* .button-excluir {
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    border-radius: 0 25px 25px 0;
+    padding-right: 10px;
+} */
 
 /* Listas */
 ul {
@@ -136,7 +150,7 @@ ul {
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
+    color: #0e93a5;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
@@ -150,7 +164,7 @@ ul {
     padding: 10px 40px;
     color: var(--color-white);
     background-color: var(--color-button);
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .button-draw img {
