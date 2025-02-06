@@ -14,7 +14,6 @@ Os nomes inseridos são exibidos em uma lista visível na página, e ao finaliza
 - HTML
 - CSS
 
-
 ## Funcionalidades
 
 - Adicionar nomes;
@@ -31,9 +30,6 @@ Adicione etiquetas de algum lugar, como: [shields.io](https://shields.io/)
 
 
 ## Demonstração
-
-[!Imagem da aplicação](CoverApp.jpg)
-
 
 ## 🔗 Links
 
