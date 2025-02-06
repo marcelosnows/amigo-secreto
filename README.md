@@ -1,6 +1,6 @@
 
 <h1 align="center">
-# 🚀 Programa ONE Oracle + Alura - Amigro Secreto
+# 🚀 Programa ONE Oracle + Alura
 </h1>
 
 <p align="center">
@@ -32,6 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 # 💻 Projeto
 
+<h3>Amigo Secreto</h3>
 A proposta do desafio era desenvolver uma aplicação que permitisse aos usuários inserir nomes de amigos em uma lista para, em seguida, realizar um sorteio aleatório e determinar quem é o "amigo secreto".
 
 O usuário adiciona o(s) nome(s) por meio de um campo de texto e um botão "Adicionar".
