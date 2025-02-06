@@ -1,19 +1,11 @@
 
-## Etiquetas
-
-Adicione etiquetas de algum lugar, como: [shields.io](https://shields.io/)
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-
-</br>
-</br>
-
-# 🚀 Programa ONE = Alura - Amigro Secreto
-
-</br>
+<h1 align="center">
+# 🚀 Programa ONE Oracle + Alura - Amigro Secreto
+</h1>
 
 <p align="center">
-NLW é um evento exclusivo e gratuíto, provomido pela Rocketseat para ensino de tecnologias WEB. <br/>
+<h3>O que é o ONE?</h3>
+O ONE é um programa de educação e empregabilidade com objetivo social de capacitar pessoas em tecnologia econectá-las com o mercado de trabalho por meio dasempresas parceiras que apoiam o programa.
 </p>
 
 <p align="center">
@@ -34,7 +26,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML e CSS
 - Git
 - GitHub
-- Versel
+- Versel - Deploy
 
 </br>
 
@@ -46,15 +38,23 @@ O usuário adiciona o(s) nome(s) por meio de um campo de texto e um botão "Adic
 
 Os nomes inseridos são exibidos em uma lista visível na página, e ao finalizar a inserção dos nomes, o usuário inicia o sorteio clicando no botão "Sortear amigo" selecionará um dos nomes de forma aleatória, exibindo o resultado na tela.
 
-[Visite o projeto online](https://marcelosnows.github.io/nlw-spacetime/)
+![Visite o projeto online](https://amigo-secreto-three-eta.vercel.app/)
+
+(https://marcelosnows.github.io/nlw-spacetime/)
 
 </br>
 
 # 🔖 Layout
 
-![preview](.github/ProjectPreview.png)
+![preview](/preview/previewApp.png)
 
 </br>
+
+## Etiquetas
+
+Adicione etiquetas de algum lugar, como: [shields.io](https://shields.io/)
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 ---
 
