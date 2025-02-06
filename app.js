@@ -21,20 +21,23 @@ function addFriends() {
   } else if (/^([a-zA-Z])\1+$/.test(friendsName)) {
     //valida se não há caracteres repetidos.
     alert("O nome não pode ter caracteres repetidos.");
-    inputFriendsName.focus();
     inputFriendsName.value = "";
+    inputFriendsName.focus();
   
   } else {
     // insere o nome no array de amigos e atualiza e limpa o campo
     friends.push(friendsName);
     originalFriends.push(friendsName); // atualiza lista original
     updateFriendList();
+    friendsName = inputFriendsName.value = "";
+    inputFriendsName.focus();
+
   };
 
    // permite a entrada de dados pressionando "Enter"
- document.getElementById("input-friends-name").addEventListener("keydown", function(e) {
+  document.getElementById("input-friends-name").addEventListener("keydown", function(e) {
   if (e.key === "Enter") {
-    addFriends(friends);
+    addFriends();
   };
 });
 
@@ -44,19 +47,21 @@ function addFriends() {
 function updateFriendList() {
   const friendsList = document.getElementById("friendsList");
   friendsList.innerHTML = friends.map(friend => `<li>${friend}</li>`).join("");
+
 };
 
 function drawSecretFriend() {
   let restart;
   if (friends.length === 0) {
+    document.getElementById("resultado").innerHTML = "";
     restart = confirm("Não há amigos cadastrados. Adicione os nomes para sorteá-los!");
     inputFriendsName.focus();
   }
   if (restart) {
     friends = []; // reinicia a lista de amigos
     updateFriendList();
-    document.getElementById("resultado").innerHTML = "";
-    alert("A aplicação será reiniciada e você poderá cadastrar novos amigos!")
+    
+    alert("Todos os amigos já foram sorteados. Cadastre novos nomes para continuar!");
   } else {
     const secretFriendIndex = [Math.floor(Math.random() * friends.length)];
     let friendDraw = friends [secretFriendIndex];
@@ -68,6 +73,4 @@ function drawSecretFriend() {
     updateFriendList();
   
   } 
-  return; 
 }
-
