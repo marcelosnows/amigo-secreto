@@ -40,13 +40,11 @@ Os nomes inseridos são exibidos em uma lista visível na página, e ao finaliza
 
 ![Visite o projeto online](https://amigo-secreto-three-eta.vercel.app/)
 
-(https://marcelosnows.github.io/nlw-spacetime/)
-
 </br>
 
 # 🔖 Layout
 
-![preview](/preview/previewApp.png)
+![preview](/preview/previewApp.jpg)
 
 </br>
 
