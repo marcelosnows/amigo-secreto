@@ -1,6 +1,6 @@
 
 <h1 align="center">
-# 🚀 Programa ONE Oracle + Alura - Amigro Secreto
+# 🚀 Programa ONE Oracle + Alura
 </h1>
 
 <p align="center">
@@ -32,13 +32,14 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 # 💻 Projeto
 
+<h3>Amigo Secreto</h3>
 A proposta do desafio era desenvolver uma aplicação que permitisse aos usuários inserir nomes de amigos em uma lista para, em seguida, realizar um sorteio aleatório e determinar quem é o "amigo secreto".
 
 O usuário adiciona o(s) nome(s) por meio de um campo de texto e um botão "Adicionar".
 
 Os nomes inseridos são exibidos em uma lista visível na página, e ao finalizar a inserção dos nomes, o usuário inicia o sorteio clicando no botão "Sortear amigo" selecionará um dos nomes de forma aleatória, exibindo o resultado na tela.
 
-🔗![Visite o projeto online](https://amigo-secreto-three-eta.vercel.app/)
+🔗[Visite o projeto online](https://amigo-secreto-three-eta.vercel.app/)
 
 </br>
 
