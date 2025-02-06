@@ -1,4 +1,5 @@
 let friends = [];
+let originalFriends = []; // lista original para reiniciar o app
 
 function addFriends() {
 
@@ -8,22 +9,26 @@ function addFriends() {
   if(friendsName === "") {
     // validando se o campo está vazio
     alert("O campo está vazio, digite um nome!")
+    inputFriendsName.focus();
 
   } else if (!/^[a-zA-Z\s]+$/.test(friendsName)) {
     // validando se foram digitados apenas letras
     alert("Não são permitidos caracteres especiais e nem números!")
     alert("O nome só pode conter letras e espaços!")
+    inputFriendsName.focus();
+    inputFriendsName.value = "";
     
   } else if (/^([a-zA-Z])\1+$/.test(friendsName)) {
     //valida se não há caracteres repetidos.
     alert("O nome não pode ter caracteres repetidos.");
+    inputFriendsName.focus();
+    inputFriendsName.value = "";
   
   } else {
     // insere o nome no array de amigos e atualiza e limpa o campo
     friends.push(friendsName);
-    atualizeList();
-    inputFriendsName.focus();
-    inputFriendsName.value = "";
+    originalFriends.push(friendsName); // atualiza lista original
+    updateFriendList();
   };
 
    // permite a entrada de dados pressionando "Enter"
@@ -36,30 +41,33 @@ function addFriends() {
   return;
 };
 
-function atualizeList() {
+function updateFriendList() {
   const friendsList = document.getElementById("friendsList");
-  friendsList.innerHTML = "";
-  friends.forEach((friends) => {
-    const li = document.createElement("li");
-    li.textContent = friends;
-    friendsList.appendChild(li);
-  }
-)};
+  friendsList.innerHTML = friends.map(friend => `<li>${friend}</li>`).join("");
+};
 
 function drawSecretFriend() {
+  let restart;
   if (friends.length === 0) {
-      alert("Nenhum amigo foi adicionado. Adicione um amigo para sorteá-lo!");  
-    
+    restart = confirm("Não há amigos cadastrados. Adicione os nomes para sorteá-los!");
+    inputFriendsName.focus();
+  }
+  if (restart) {
+    friends = []; // reinicia a lista de amigos
+    updateFriendList();
+    document.getElementById("resultado").innerHTML = "";
+    alert("A aplicação será reiniciada e você poderá cadastrar novos amigos!")
   } else {
-    const secretFriend = [Math.floor(Math.random() * friends.length)];
-    const friendDraw = friends [secretFriend];
+    const secretFriendIndex = [Math.floor(Math.random() * friends.length)];
+    let friendDraw = friends [secretFriendIndex];
     const result = document.getElementById("resultado");
     result.innerHTML = `<li> O amigo secreto sorteado foi: ${friendDraw}</li>`;
     
-    // remove o amigo sorteado da lista.
-    friendDraw = friends.splice(secretFriend, 1);
-  };
+    // remove o nome do amigo sorteado da lista.
+    friends.splice(secretFriendIndex, 1);
+    updateFriendList();
   
-   return;
-};
+  } 
+  return; 
+}
 
