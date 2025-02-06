@@ -38,13 +38,13 @@ O usuário adiciona o(s) nome(s) por meio de um campo de texto e um botão "Adic
 
 Os nomes inseridos são exibidos em uma lista visível na página, e ao finalizar a inserção dos nomes, o usuário inicia o sorteio clicando no botão "Sortear amigo" selecionará um dos nomes de forma aleatória, exibindo o resultado na tela.
 
-![Visite o projeto online](https://amigo-secreto-three-eta.vercel.app/)
+🔗![Visite o projeto online](https://amigo-secreto-three-eta.vercel.app/)
 
 </br>
 
 # 🔖 Layout
 
-![preview](/preview/previewApp.jpg)
+![preview](/preview/coverApp.png)
 
 </br>
 
